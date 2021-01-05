@@ -3,10 +3,74 @@
 <head>
   <title>Intégration web - J1</title>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="style.css">
-</head
+  <style>
+    @media (max-width: 400px) {
+        header, nav {
+          flex-direction: column;
+        }
+
+        nav {
+          order: 1;
+        }
+
+        #header_home {
+          order: 2
+        }
+    }
+
+    header {
+      background-color: #DEDEDE;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #header_home {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #333;
+      display: flex;
+      color: white;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      text-decoration: none;
+      background-color: #AAA;
+      width: 100px;
+      height: 30px;
+      margin: 5px;
+      color: white;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: blue;
+    }
+  </style>
+</head>
 <body role="document">
   <h1>Intégration web - Exercice d'introduction</h1>
-  <p><em>Complétez ce fichier ainsi que le fichier style.css pour obtenir la mise en page souhaitée.</em></p>
+  <header>
+    <a href="/" id="header_home">Home</a>
+    <nav>
+      <a href="#">Lien 1</a>
+      <a href="#">Lien 2</a>
+      <a href="#">Lien 3</a>
+    </nav>
+  </header>
 </body>
 </html>
