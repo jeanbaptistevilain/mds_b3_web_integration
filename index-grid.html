@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intégration web - J1</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @media screen and (max-width: 1024px) {
+        .container article {
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        header, nav, aside.top {
+          flex-direction: column;
+        }
+
+        nav {
+          order: 1;
+        }
+
+        #header_home {
+          order: 2
+        }
+
+        aside.top > * {
+          width: calc(100% - 20px) !important;
+          margin: 0 10px !important;
+        }
+    }
+
+    body {
+      max-width: 960px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #DEDEDE;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #header_home {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #333;
+      display: flex;
+      color: white;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      text-decoration: none;
+      background-color: #AAA;
+      width: 100px;
+      height: 30px;
+      margin: 5px;
+      color: white;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: blue;
+    }
+
+    aside.top {
+      display: flex;
+      margin-top: 10px;
+      height: 300px;
+    }
+
+    aside.top > * {
+      width: 50%;
+    }
+
+    aside.top .img_container {
+      margin-right: 5px;
+    }
+
+    aside.top .block_right {
+      margin-left: 5px;
+    }
+
+    .img_container img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+
+    .container article {
+      background-color: #868e96;
+    }
+
+    .container article p, .container article h3 {
+      padding: 0 10px;
+    }
+
+    .container article {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body role="document">
+  <h1>Intégration web - Exercice d'introduction</h1>
+  <header>
+    <a href="/" id="header_home">Home</a>
+    <nav>
+      <a href="#">Lien 1</a>
+      <a href="#">Lien 2</a>
+      <a href="#">Lien 3</a>
+    </nav>
+  </header>
+  <aside class="top">
+    <div class="img_container"><img src="anomalocaris.jpg" alt="anomalocaris"/></div>
+    <div class="block_right">
+      <h2>Titre aside</h2>
+      <p>Paragraphe aside avec des phrases. Paragraphe aside avec des phrases. Paragraphe aside avec des phrases.
+        Paragraphe aside avec des phrases.</p>
+    </div>
+  </aside>
+  <section>
+    <div class="container">
+      <article>
+        <div class="img_container">
+          <img src="dilophosaurus.jpg" alt="dilophosaurus"/>
+        </div>
+        <h3>Titre 1</h3>
+        <p>Paragraphe aside avec des phrases. Paragraphe aside avec des phrases. Paragraphe aside avec des phrases.
+          Paragraphe aside avec des phrases.</p>
+      </article>
+      <article>
+        <div class="img_container">
+          <img src="dilophosaurus.jpg" alt="dilophosaurus"/>
+        </div>
+        <h3>Titre 2</h3>
+        <p>Paragraphe aside avec des phrases. Paragraphe aside avec des phrases. Paragraphe aside avec des phrases.
+          Paragraphe aside avec des phrases.</p>
+      </article>
+      <article>
+        <div class="img_container">
+          <img src="dilophosaurus.jpg" alt="dilophosaurus"/>
+        </div>
+        <h3>Titre 3</h3>
+        <p>Paragraphe aside avec des phrases. Paragraphe aside avec des phrases. Paragraphe aside avec des phrases.
+          Paragraphe aside avec des phrases.</p>
+      </article>
+      <article>
+        <div class="img_container">
+          <img src="dilophosaurus.jpg" alt="dilophosaurus"/>
+        </div>
+        <h3>Titre 4</h3>
+        <p>Paragraphe aside avec des phrases. Paragraphe aside avec des phrases. Paragraphe aside avec des phrases.
+          Paragraphe aside avec des phrases.</p>
+      </article>
+      <article>
+        <div class="img_container">
+          <img src="dilophosaurus.jpg" alt="dilophosaurus"/>
+        </div>
+        <h3>Titre 5</h3>
+        <p>Paragraphe aside avec des phrases. Paragraphe aside avec des phrases. Paragraphe aside avec des phrases.
+          Paragraphe aside avec des phrases.</p>
+      </article>
+      <article>
+        <div class="img_container">
+          <img src="dilophosaurus.jpg" alt="dilophosaurus"/>
+        </div>
+        <h3>Titre 6</h3>
+        <p>Paragraphe aside avec des phrases. Paragraphe aside avec des phrases. Paragraphe aside avec des phrases.
+          Paragraphe aside avec des phrases.</p>
+      </article>
+    </div>
+  </section>
+</body>
+</html>
