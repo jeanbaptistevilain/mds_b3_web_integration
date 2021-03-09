@@ -7,7 +7,12 @@
   <link rel="stylesheet" href="style.css">
   <style>
     @media screen and (max-width: 1024px) {
-        .container article {
+        div.container {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        #mon_footer {
+          grid-template-columns: 1fr 1fr;
         }
     }
 
@@ -24,10 +29,18 @@
           order: 2
         }
 
+        aside.top {
+          height: auto !important;
+        }
+
         aside.top > * {
           width: calc(100% - 20px) !important;
           margin: 0 10px !important;
         }
+
+      section div.container {
+        grid-template-columns: 1fr;
+      }
     }
 
     body {
@@ -118,6 +131,22 @@
     .container article {
       border: 1px solid red;
     }
+
+    footer {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+      column-gap: 10px;
+      row-gap: 10px;
+      background-color: #333;
+      margin: 20px 0;
+      justify-items: center;
+    }
+
+    footer > div {
+      color: white;
+      padding: 10px;
+      /*max-width: 200px;*/
+    }
   </style>
 </head>
 <body role="document">
@@ -190,5 +219,27 @@
       </article>
     </div>
   </section>
+  <footer id="mon_footer">
+    <div>
+      <h4>Footer 1</h4>
+      <p>Test footer. Test footer. Test footer. Test footer. Test footer. </p>
+    </div>
+    <div>
+      <h4>Footer 1</h4>
+      <p>Test footer. Test footer. Test footer. Test footer. Test footer. </p>
+    </div>
+    <div>
+      <h4>Footer 1</h4>
+      <p>Test footer. Test footer. Test footer. Test footer. Test footer. </p>
+    </div>
+    <div>
+      <h4>Footer 1</h4>
+      <a href="#">Lien 1</a>
+      <a href="#">Lien 2</a>
+      <a href="#">Lien 3</a>
+      <a href="#">Lien 4</a>
+      <p>Test footer. Test footer. Test footer. Test footer. Test footer. </p>
+    </div>
+  </footer>
 </body>
 </html>

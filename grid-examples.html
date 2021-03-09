@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intégration web - J1</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /*grid-template-rows: repeat(3, 100px);*/
+      grid-auto-flow: row;
+      grid-gap: 10px;
+      grid-auto-rows: 120px;
+      /*grid-auto-columns: 250px;*/
+    }
+
+    .container > div {
+      background-color: black;
+      color: white;
+    }
+
+    .a {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .b {
+      grid-row: 1 / 2;
+      grid-column: 3 / span 2;
+    }
+
+    .c {
+      grid-area: 2 / 1 / 2 / 3;
+      background-color: pink !important;
+      z-index: 2;
+    }
+
+    .d {
+      grid-area: 2 / 2 / 3 / 5;
+    }
+
+    .e {
+      grid-area: 3 / 1 / 4 / 5;
+    }
+  </style>
+</head>
+<body role="document">
+  <div class="container">
+    <div class="a"><p>A</p></div>
+    <div class="b"><p>B</p></div>
+    <div class="c"><p>C</p></div>
+    <div class="d"><p>D</p></div>
+    <div class="e"><p>E</p></div>
+  </div>
+</body>
+</html>
