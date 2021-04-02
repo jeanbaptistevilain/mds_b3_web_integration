@@ -3210,19 +3210,21 @@ button:focus {
   display: none;
 }
 
-/* line 1, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_main.scss */
-h1 {
-  border: 1px solid #130ede;
+/* line 1, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+header {
+  background-color: #868e96;
 }
 
-/* line 6, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_main.scss */
-section button {
-  border-radius: 15px !important;
+/* line 5, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.align-center {
+  align-items: center;
 }
 
-/* line 9, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_main.scss */
-section button.btn--primary {
-  font-size: 22px;
+@media screen and (max-width: 576px) {
+  /* line 10, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+  .small-center {
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=knacss.css.map */

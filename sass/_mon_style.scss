@@ -1,0 +1,13 @@
+header {
+  background-color: #868e96;
+}
+
+.align-center {
+  align-items: center;
+}
+
+@media screen and (max-width: $small) {
+  .small-center {
+    margin: auto;
+  }
+}
