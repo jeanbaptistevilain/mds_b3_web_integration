@@ -14,6 +14,10 @@ Exercice d'introduction au module d'intégration web
 
 _source : webflow.com_
 
+## Supports de cours
+- [Trame générale du cours](https://formation.web.hotentic.com)
+- [Support de cours SASS - Loria](https://homepages.loria.fr/YBoniface/html/cours/sass.pdf)
+
 ## Liens utiles
 - Guide de mise en page CSS sur MDN : https://developer.mozilla.org/fr/docs/Apprendre/CSS/CSS_layout
 - Introduction à Flexbox sur MDN : https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout
