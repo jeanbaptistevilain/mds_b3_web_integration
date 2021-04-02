@@ -5,6 +5,6 @@ Importer ces 2 fichiers dans le fichier principal *knacss.scss*
 ### Modifier le contenu des fichiers
 En utilisant les concepts introduits par le langage SCSS (variables, placeholders, mixins...) :
   * Faire en sorte que le document utilise les polices de caractère "Courier New, Comic Sans MS, serif"
-  * En utilisant les couleurs définies par KNACSS, créer des classes utilitaires *.bg--primary*, *.bg--warning*, etc... pour pouvoir appliquer des couleurs d'arrière-plan aux éléments de la mise en page
+  * En utilisant les couleurs définies par KNACSS, créer des classes utilitaires *.bg--primary*, *.bg--warning*, etc... pour pouvoir appliquer des couleurs d'arrière-plan aux éléments de la mise en page. Ces classes appliqueront également une bordure de 2px de la couleur correspondante, légèrement assombrie (de 30% par exemple).
   * Créer une classe *.btn--round* qui réutilise le style de bouton défini par KNACSS, mais avec des bords arrondis cette fois
 
