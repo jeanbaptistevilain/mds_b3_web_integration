@@ -2467,7 +2467,7 @@ button, .btn--primary,
 .button--warning, .btn--danger,
 .button--danger, .btn--inverse,
 .button--inverse, .btn--ghost,
-.button--ghost {
+.button--ghost, .btn--round, .btn--round--10, .btn--round--15, .btn--round--20 {
   display: inline-block;
   padding: 1rem 1.5rem;
   cursor: pointer;
@@ -3225,6 +3225,73 @@ header {
   .small-center {
     margin: auto;
   }
+}
+
+/* line 17, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+footer div div {
+  background-color: #ccc;
+}
+
+/* line 25, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.bg--primary {
+  background-color: #13d5d8;
+  border: 2px solid #074a4b;
+}
+
+/* line 25, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.bg--success {
+  background-color: #2a5c03;
+  border: 2px solid black;
+}
+
+/* line 25, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.bg--info {
+  background-color: #130ede;
+  border: 2px solid #07054e;
+}
+
+/* line 25, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.bg--warning {
+  background-color: #fd7807;
+  border: 2px solid #6a3101;
+}
+
+/* line 25, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.bg--danger {
+  background-color: #D9534F;
+  border: 2px solid #761c19;
+}
+
+/* line 25, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.bg--inverse {
+  background-color: #333;
+  border: 2px solid black;
+}
+
+/* line 25, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.bg--ghost {
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+/* line 37, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.btn--round {
+  border-radius: 5px;
+}
+
+/* line 41, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.btn--round--10 {
+  border-radius: 10px;
+}
+
+/* line 45, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.btn--round--15 {
+  border-radius: 15px;
+}
+
+/* line 49, ../../../../../Users/jbvilain/workspace/code/mds_b3_web_integration/sass/_mon_style.scss */
+.btn--round--20 {
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=knacss.css.map */
